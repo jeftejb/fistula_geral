@@ -67,7 +67,7 @@ export default function NossaSolucaoPage() {
                         <ArrowLeft className="inline-block h-5 w-5 mr-2" />
                         Voltar à Página Principal
                     </Link>
-                    <Link href="/(dashboard)/home" className="bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-pink-700 transition-colors">
+                    <Link href="/" className="bg-pink-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-pink-700 transition-colors">
                         Portal do Profissional
                     </Link>
                 </div>
