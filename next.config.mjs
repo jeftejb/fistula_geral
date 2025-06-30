@@ -1,18 +1,27 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images:{
-        domains:['images.unsplash.com']
-    },
-     
-  typescript: {
-   
-    ignoreBuildErrors: true,
+  
+  // Configuração de imagens atualizada para o padrão recomendado
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+  
+  // Ignora erros de ESLint durante o processo de build
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 
-  
-  eslint: {
- 
-    ignoreDuringBuilds: true,
+  // Ignora erros de TypeScript durante o processo de build
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 
+export default nextConfig;
